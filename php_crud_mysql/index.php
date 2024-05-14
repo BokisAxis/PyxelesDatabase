@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     // Conexión a la base de datos (reemplaza con tus propios datos)
-    $conn = mysqli_connect('localhost', 'root', '', 'pyxeles');
+    $conn = mysqli_connect('', '', '', '');
 
     // Consulta para verificar las credenciales
     $query = "SELECT id FROM users WHERE user = '$username' AND password = SHA2('$password', 256)";
