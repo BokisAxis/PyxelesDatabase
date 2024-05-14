@@ -7,10 +7,10 @@ session_start();
 //A connection is established to a MySQL database
 $conn = mysqli_connect(  
 
-'localhost',  //MySQL server name
-'root',  //MySQL username
+'',  //MySQL server name
+'',  //MySQL username
 '',  //Mysql password
-'pyxeles'  //Database name
+''  //Database name
 );
 
 ?>
