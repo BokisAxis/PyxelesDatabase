@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['usuario'] = $username;
 
     // Database connection
-    $conn = mysqli_connect('localhost', 'root', '', 'pyxeles');
+    $conn = mysqli_connect('', '', '', '');
 
     // Query to verify credentials
     $query = "SELECT id FROM users WHERE user = '$username' AND password = SHA2('$password', 256)";
