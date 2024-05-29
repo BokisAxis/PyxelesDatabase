@@ -260,7 +260,7 @@ if (!isset($_SESSION['usuario'])) {
                                     </td>
                                 </tr>
 
-                                <!-- stilo de los botones -->
+                                <!-- Estilo de los botones -->
                                 <style>.button-container {
                                          display: flex;
                                         justify-content: space-between; /* Alinea los botones al principio y al final del contenedor */
