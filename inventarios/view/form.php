@@ -54,6 +54,7 @@ if (!isset($_SESSION['usuario'])) {
                                     foreach ($result as $row) {
                                     echo '<option value="' . $row['name'] . '">' . $row['name'] . '</option>';
                                         }
+//Cambiar por bootstrap-table 
                                 ?>
                             </select>
                         </div>
