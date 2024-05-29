@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = mysqli_connect('', '', '', '');
 
     // Query to verify credentials
+    //antes de esto verifica "sanitiza" lo que el usuario envio 
     $query = "SELECT id FROM users WHERE user = '$username' AND password = SHA2('$password', 256)";
     $result = mysqli_query($conn, $query);
 
